@@ -1,0 +1,31 @@
+hotel_id,hotel_name,city,neighborhood,star_rating,room_type,max_occupancy_adults,price_per_night_usd,currency,breakfast_included,free_cancellation_until_days,amenities,checkin_time,checkout_time,availability_start_date,availability_end_date,rooms_available,tax_included,rating_out_of_10
+H0001,Lion City Capsule Hostel,Singapore,Chinatown,2,Standard Double,2,80,USD,False,0,Free WiFi;Air Conditioning;24h Front Desk,15:00,12:00,2025-10-01,2025-12-31,8,False,7.5
+H0002,Harbourfront Inn,Singapore,Harbourfront,3,Standard Double,2,120,USD,True,0,Free WiFi;Air Conditioning;Breakfast Included,15:00,12:00,2025-10-01,2025-12-31,10,False,7.9
+H0003,Orchard City Hotel,Singapore,Orchard,4,Standard Double,2,210,USD,False,2,Free WiFi;Pool;Gym,15:00,12:00,2025-10-01,2025-12-31,12,False,8.3
+H0004,Capitol Luxury Suites,Singapore,City Hall,5,Standard Double,2,420,USD,True,2,Free WiFi;Pool;Gym;Spa,15:00,12:00,2025-10-01,2025-12-31,14,False,8.7
+H0005,Marina Bay View Hotel,Singapore,Marina Bay,5,Standard Double,2,520,USD,True,2,Free WiFi;Executive Lounge;Spa;Gym;Pool,15:00,12:00,2025-10-01,2025-12-31,16,False,9.1
+H0006,Changi Garden Hotel,Singapore,Changi,3,Standard Double,2,150,USD,False,0,Free WiFi;Airport Shuttle,15:00,12:00,2025-10-01,2025-12-31,18,False,9.5
+H0007,Kuta Budget Inn,Bali,Kuta,2,Standard Double,2,25,USD,False,0,Free WiFi;Air Conditioning;24h Front Desk,15:00,12:00,2025-10-01,2025-12-31,8,True,7.5
+H0008,Ubud Bamboo Lodge,Bali,Ubud,3,Standard Double,2,55,USD,True,0,Free WiFi;Air Conditioning;Breakfast Included,15:00,12:00,2025-10-01,2025-12-31,10,True,7.9
+H0009,Canggu Surf Hostel,Bali,Canggu,2,Standard Double,2,20,USD,False,0,Free WiFi;Pool;Gym,15:00,12:00,2025-10-01,2025-12-31,12,True,8.3
+H0010,Seminyak Beach Resort,Bali,Seminyak,4,Standard Double,2,120,USD,True,2,Free WiFi;Pool;Gym;Spa,15:00,12:00,2025-10-01,2025-12-31,14,True,8.7
+H0011,Nusa Dua Grand,Bali,Nusa Dua,5,Standard Double,2,260,USD,True,2,Free WiFi;Executive Lounge;Spa;Gym;Pool,15:00,12:00,2025-10-01,2025-12-31,16,True,9.1
+H0012,Uluwatu Cliff Villas,Bali,Uluwatu,5,Standard Double,2,320,USD,False,2,Free WiFi;Airport Shuttle,15:00,12:00,2025-10-01,2025-12-31,18,True,9.5
+H0013,Tunjungan Budget Hotel,Surabaya,Tunjungan,2,Standard Double,2,18,USD,False,0,Free WiFi;Air Conditioning;24h Front Desk,15:00,12:00,2025-10-01,2025-12-31,8,True,7.5
+H0014,Gubeng City Inn,Surabaya,Gubeng,3,Standard Double,2,35,USD,True,0,Free WiFi;Air Conditioning;Breakfast Included,15:00,12:00,2025-10-01,2025-12-31,10,True,7.9
+H0015,Surabaya Central Hotel,Surabaya,Genteng,3,Standard Double,2,45,USD,False,0,Free WiFi;Pool;Gym,15:00,12:00,2025-10-01,2025-12-31,12,True,8.3
+H0016,Galaxy Premier Suites,Surabaya,Galaxy Mall,4,Standard Double,2,80,USD,True,2,Free WiFi;Pool;Gym;Spa,15:00,12:00,2025-10-01,2025-12-31,14,True,8.7
+H0017,Pakuwon Luxury Residence,Surabaya,Pakuwon,5,Standard Double,2,150,USD,True,2,Free WiFi;Executive Lounge;Spa;Gym;Pool,15:00,12:00,2025-10-01,2025-12-31,16,True,9.1
+H0018,Juanda Airport Hotel,Surabaya,Airport,3,Standard Double,2,40,USD,False,0,Free WiFi;Airport Shuttle,15:00,12:00,2025-10-01,2025-12-31,18,True,9.5
+H0019,Asakusa Capsule Hotel,Tokyo,Asakusa,2,Standard Double,2,40,USD,False,0,Free WiFi;Air Conditioning;24h Front Desk,15:00,12:00,2025-10-01,2025-12-31,8,False,7.5
+H0020,Shinjuku Business Hotel,Tokyo,Shinjuku,3,Standard Double,2,95,USD,True,0,Free WiFi;Air Conditioning;Breakfast Included,15:00,12:00,2025-10-01,2025-12-31,10,False,7.9
+H0021,Shibuya Trend Hotel,Tokyo,Shibuya,4,Standard Double,2,180,USD,False,2,Free WiFi;Pool;Gym,15:00,12:00,2025-10-01,2025-12-31,12,False,8.3
+H0022,Ginza Premier,Tokyo,Ginza,5,Standard Double,2,380,USD,True,2,Free WiFi;Pool;Gym;Spa,15:00,12:00,2025-10-01,2025-12-31,14,False,8.7
+H0023,Roppongi Grand Tower,Tokyo,Roppongi,5,Standard Double,2,480,USD,True,2,Free WiFi;Executive Lounge;Spa;Gym;Pool,15:00,12:00,2025-10-01,2025-12-31,16,False,9.1
+H0024,Haneda Airport Inn,Tokyo,Haneda,3,Standard Double,2,85,USD,False,0,Free WiFi;Airport Shuttle,15:00,12:00,2025-10-01,2025-12-31,18,False,9.5
+H0025,Khao San Backpackers,Bangkok,Khao San,2,Standard Double,2,25,USD,False,0,Free WiFi;Air Conditioning;24h Front Desk,15:00,12:00,2025-10-01,2025-12-31,8,True,7.5
+H0026,Sukhumvit City Inn,Bangkok,Sukhumvit,3,Standard Double,2,55,USD,True,0,Free WiFi;Air Conditioning;Breakfast Included,15:00,12:00,2025-10-01,2025-12-31,10,True,7.9
+H0027,Silom Park Hotel,Bangkok,Silom,4,Standard Double,2,110,USD,False,2,Free WiFi;Pool;Gym,15:00,12:00,2025-10-01,2025-12-31,12,True,8.3
+H0028,Riverside Grand Bangkok,Bangkok,Riverside,5,Standard Double,2,220,USD,True,2,Free WiFi;Pool;Gym;Spa,15:00,12:00,2025-10-01,2025-12-31,14,True,8.7
+H0029,Sathorn Luxury Suites,Bangkok,Sathorn,5,Standard Double,2,260,USD,True,2,Free WiFi;Executive Lounge;Spa;Gym;Pool,15:00,12:00,2025-10-01,2025-12-31,16,True,9.1
+H0030,Suvarnabhumi Transit Hotel,Bangkok,Suvarnabhumi,3,Standard Double,2,45,USD,False,0,Free WiFi;Airport Shuttle,15:00,12:00,2025-10-01,2025-12-31,18,True,9.5

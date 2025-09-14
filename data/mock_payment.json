@@ -1,0 +1,13 @@
+{
+    "cardholder_name": "Daffa",
+    "card_number": "1234123412341234",
+    "exp_month": 12,
+    "exp_year": 2030,
+    "network": "Visa",
+    "billing_address": {
+      "line1": "123 Demo Street",
+      "city": "Jakarta",
+      "country": "ID",
+      "postal_code": "10210"
+    }
+  }
