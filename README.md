@@ -72,7 +72,7 @@ Create `.env` in the project root:
 
 ```bash
 GROQ_API_KEY=YOUR_GROQ_KEY
-GROQ_MODEL=qwen/qwen3-32b
+GROQ_MODEL=openai/gpt-oss-120b
 ```
 
 ### Run
