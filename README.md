@@ -125,7 +125,6 @@ The agent only supports destinations present in the mock hotels. If you ask for 
 On each booking:
 
 - the app masks the card (brand + last4) in the receipt,
-- increments "balance" by the booking total and writes back to this file,
 
 ## How the agent works (in short)
 
