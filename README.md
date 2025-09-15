@@ -10,7 +10,7 @@ Minimal end-to-end agent that:
 - charges a mock credit card,
 - shows all receipts in a My Trips tab.
 
-Built with Streamlit, LangGraph, and an open-source LLM via Groq (default: Qwen). The data is local-only (no real APIs).
+Built with Streamlit, LangGraph, and an open-source LLM via Groq (default: OpenAI-OSS). The data is local-only (no real APIs).
 
 ## Demo flow
 
