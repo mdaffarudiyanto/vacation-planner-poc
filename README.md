@@ -22,8 +22,8 @@ Plan me a trip from Jakarta to Singapore for 3 days with a budget of $1500 from 
 
 The app shows a 3-day itinerary and a proposal (flight + hotel) under budget.
 
-Reply yes to book. A JSON receipt is written and visible under My Trips.
-The receipt includes masked card details and a running balance (from data/mock_payment.json).
+Reply yes to book. A JSON booking receipt is written and visible under My Trips.
+The receipt includes masked card details
 
 ## Project structure
 
@@ -33,7 +33,7 @@ The receipt includes masked card details and a running balance (from data/mock_p
 ├── data/
 │   ├── mock_flights_by_date.csv
 │   ├── mock_hotels.csv
-│   ├── mock_payment.json       # mock card + running balance
+│   ├── mock_payment.json       # mock card 
 │   └── receipts/               # JSON receipts (written at booking time)
 ├── src/
 │   ├── config.py               # paths, defaults (CFG.data_dir, CFG.receipts_dir)

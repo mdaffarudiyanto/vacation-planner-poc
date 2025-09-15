@@ -48,8 +48,8 @@ def book_and_write_receipt(
 
     os.makedirs(booking_dir, exist_ok=True)
 
-    flight_id = _gen_id("FL")
-    hotel_id  = _gen_id("HT")
+    flight_booking_id = _gen_id("FL")
+    hotel_booking_id  = _gen_id("HT")
     booking_id = _gen_id("BOOK")
 
     payment_raw = _load_payment_info()
@@ -71,8 +71,8 @@ def book_and_write_receipt(
         "flight_option": flight_option,
         "hotel_option": hotel_option,
         "total_price_usd": float(total_price_usd or 0.0),
-        "flight_id": flight_id,
-        "hotel_id": hotel_id,
+        "flight_booking_id": flight_booking_id,
+        "hotel_booking_id": hotel_booking_id,
         "billing": {
             "payment_method": payment_masked,   
             "charge": charge                    

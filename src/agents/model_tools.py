@@ -4,17 +4,24 @@ from __future__ import annotations
 import os, json
 from typing import Optional, Tuple, Dict, Any, List
 
-from groq import Groq
+try:
+    from groq import Groq
+except Exception:
+    Groq = None  # type: ignore
+
 from src.utils.search_inventory import load_data, find_options
 from src.utils.booking import book_and_write_receipt
 from src.config import CFG
 
 
 def _client() -> Optional[Groq]:
-    key = os.getenv("GROQ_API_KEY", "")
+    key = os.getenv("GROQ_API_KEY")
+    if not key or Groq is None:
+        return None
     return Groq(api_key=key)
 
 
+# ---- Tool schemas ----
 TOOLS_SEARCH = [
     {
         "type": "function",
@@ -73,6 +80,7 @@ TOOLS_BOOK = [
 
 
 def _exec_tool(name: str, args: Dict[str, Any], *, allow_booking: bool = False) -> Dict[str, Any]:
+    """Dispatch tool call -> Python function(s)."""
     if name == "search_inventory":
         flights_df, hotels_df = load_data(CFG.data_dir)
         flight, hotel, total = find_options(
@@ -104,6 +112,7 @@ def _exec_tool(name: str, args: Dict[str, Any], *, allow_booking: bool = False) 
             args["hotel_option"],
             float(args["total_price_usd"]),
         )
+        # Return key IDs for the model to mention
         try:
             with open(path, "r") as f:
                 data = json.load(f)
@@ -112,9 +121,9 @@ def _exec_tool(name: str, args: Dict[str, Any], *, allow_booking: bool = False) 
         return {
             "status": "ok",
             "receipt_path": path,
-            "booking_id": data.get("booking_id"),
-            "flight_id": data.get("flight_id"),
-            "hotel_id": data.get("hotel_id"),
+            "receipt_id": data.get("receipt_id"),
+            "flight_booking_id": data.get("flight_booking_id"),
+            "hotel_booking_id": data.get("hotel_booking_id"),
             "total_price_usd": data.get("total_price_usd"),
         }
 
@@ -128,6 +137,9 @@ def _exec_tool(name: str, args: Dict[str, Any], *, allow_booking: bool = False) 
 def search_with_tools(
     trip_req: Dict[str, Any], known_destinations: List[str]
 ) -> Tuple[str, Optional[Dict[str, Any]], Optional[Dict[str, Any]], Optional[float]]:
+    """
+    Ask the model to call `search_inventory`. Return (assistant_text, flight, hotel, total).
+    """
     cli = _client()
     if cli is None:
         return ("LLM tools unavailable (missing GROQ_API_KEY).", None, None, None)
@@ -165,7 +177,7 @@ def search_with_tools(
 
     # 1st call (expect tool call)
     resp = cli.chat.completions.create(
-        model=os.getenv("GROQ_MODEL"),
+        model=os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile"),
         messages=messages,
         tools=TOOLS_SEARCH,
         tool_choice="auto",

@@ -1,6 +1,6 @@
 {
-  "booking_id": "BOOK-9088299EF5",
-  "created_at": "2025-09-15T00:01:04",
+  "booking_id": "BOOK-187427C8BD",
+  "created_at": "2025-09-15T13:14:00",
   "trip_request": {
     "budget": 1500,
     "currency": "USD",
@@ -9,7 +9,7 @@
     "origin": "Jakarta",
     "start_date": "2025-12-10"
   },
-  "itinerary_markdown": "Day 1  \n- Gardens by the Bay: Supertree Grove & Flower Dome.  \n- Marina Bay Sands: SkyPark with skyline views.  \n- Clarke Quay: Riverside dining and nightlife.  \n**Food**: Try *laksa* at Maxwell Hawker Centre.  \n**Transport**: Use MRT or Grab; buy a tourist Welcome Kit for discounts.  \n\nDay 2  \n- Chinatown: Buddha Tooth Relic Temple and shophouse alleys.  \n- Botanic Gardens: Swan Lake and National Orchid Garden.  \n- Kampong Glam: Haji Lane for vintage fashion.  \n**Food**: Savor *kaya toast & kopi* at a local kopitiam.  \n**Transport**: Walk Chinatown; use MRT for Gardens.  \n\nDay 3  \n- Sentosa Island: Universal Studios or Siloso Beach.  \n- Jurong Bird Park: Aviary and Skywalk.  \n- Raffles Place: Visit the ArtScience Museum.  \n**Food**: Grab a *chicken rice* hawker meal.  \n**Transport**: Take Sentosa\u2019s free shuttle from VivoCity.  \n\n*Total: 178 words*",
+  "itinerary_markdown": "Day 1\n- Explore Gardens by the Bay\u2019s Supertree Grove & Flower Dome. \n- Visit Marina Bay Sands for skyline views. \n- **Food tip**: Try hawker center icon *Chinatown Complex* (beef noodles). \n- **Transport**: Use MRT (subway) for efficient city travel. \n\nDay 2\n- Discover National Museum of Singapore & Kampong Glam\u2019s hawker scene. \n- Stroll through Chinatown\u2019s shophouses and Buddha Tooth Relic Temple. \n- **Food tip**: Savor kaya toast at *Kopitiam* (a local breakfast staple). \n- **Transport**: Walk between attractions; rent a bike for short distances. \n\nDay 3\n- Relax at Sentosa Island (Universal Studios or Siloso Beach). \n- Dine at Clarke Quay\u2019s riverside restaurants. \n- **Food tip**: Grab a durian crepe at *Bukit Timah Market*. \n- **Transport**: Take the Sentosa Express monorail for scenic island access. \n\nTotal: 178 words.",
   "flight_option": {
     "outbound": {
       "_price": 220,
@@ -101,8 +101,8 @@
     "tax_included": false
   },
   "total_price_usd": 1480.0,
-  "flight_id": "FL-5574FFADFA",
-  "hotel_id": "HT-63413C1E0E",
+  "flight_booking_id": "FL-9C849D7D8C",
+  "hotel_booking_id": "HT-E23A182EFE",
   "billing": {
     "payment_method": {
       "cardholder_name": "Daffa",
@@ -118,9 +118,9 @@
       }
     },
     "charge": {
-      "charge_id": "CHG-FC9624147C",
+      "charge_id": "CHG-3F2FF2D6D0",
       "status": "succeeded",
-      "authorized_at": "2025-09-15T00:01:04",
+      "authorized_at": "2025-09-15T13:14:00",
       "amount_usd": 1480.0,
       "currency": "USD"
     }
