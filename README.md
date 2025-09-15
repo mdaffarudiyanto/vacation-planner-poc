@@ -150,8 +150,6 @@ On each booking:
 
 - **Model**: set `GROQ_MODEL`.
 - **Data/receipts paths**: edit `src/config.py` (`CFG.data_dir`, `CFG.receipts_dir`).
-- **Token usage**: the current design is "lean" (deterministic search tool).
-  If you want an "all-LLM selection" demo later, switch to the `get_inventory` / `choose_combo` flow in `llm_tools.py` (expect higher token usage).
 
 ## Notes & limitations
 
